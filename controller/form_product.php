@@ -1,3 +1,9 @@
+<?php
+    $link2 = "http://localhost/stock_product/controller/api/all_type.php";
+    $json = file_get_contents($link2);
+    $all_type = json_decode($json);
+?>
+
 <h1>ADD PRODUCT</h1>
 <form action="controller/add_product.php" method="post" enctype="multipart/form-data">
     <table>
@@ -9,8 +15,11 @@
             <td>type</td>
             <th>
                 <select name="type_product" id="type_product">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
+                    <?php
+                        foreach ($all_type as $key => $value) {
+                            echo "<option value=". $value->type_name .">". $value->type_name . "</option>";
+                        }
+                    ?>
                 </select>
             </th>
         </tr>
