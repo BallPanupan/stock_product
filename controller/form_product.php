@@ -1,4 +1,4 @@
-<form action="add_prodict.php" method="post" enctype="multipart/form-data">
+<form action="controller/add_product.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>
             <th>name</th>

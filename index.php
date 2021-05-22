@@ -11,7 +11,7 @@
 
     <title>update stock</title>
 
-    <?php include("sql_connection.php"); ?>
+    <?php include("./controller/sql_connection.php"); ?>
 </head>
 
 <body>
