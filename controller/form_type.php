@@ -4,11 +4,7 @@
     <table>
         <tr>
             <th>type name</th>
-            <th><input type="text" name="name" id="name"></th>
-        </tr>
-        <tr>
-            <td>description</td>
-            <td><input type="text" name="description" id="description"></td>
+            <th><input type="text" name="type_name" id="type_name"></th>
         </tr>
         <tr>
             <td></td>
