@@ -1,3 +1,4 @@
+<h1>ADD PRODUCT</h1>
 <form action="controller/add_product.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>

@@ -18,7 +18,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
 
                 <h1>MENU</h1>
                 <div class='menu-tab'>
@@ -27,8 +27,7 @@
 
             </div>
 
-            <div class="col-sm-3">
-                <h1>event</h1>
+            <div class="col-sm-4">
 
                 <div id="even">asdasdsd
                 </div>
@@ -36,12 +35,9 @@
             </div>
 
 
-            <div class="col-sm-3">
-                <h3>C3</h3>
-            </div>
-
-            <div class="col-sm-3">
-                <h3>C3</h3>
+            <div class="col-sm-4">
+                <div id="description">
+                </div>
             </div>
 
 
