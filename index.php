@@ -29,7 +29,8 @@
 
             <div class="col-sm-4">
 
-                <div id="even">asdasdsd
+                <div id="even">
+                    even
                 </div>
 
             </div>

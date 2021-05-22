@@ -18,7 +18,19 @@ $(document).ready(function(){
         
     });
 
-
+    $('#btn_add_type').click(function(){
+        $('#description').load("./controller/list_type.php");
+        type_name = $('input[name="type_name"]').val();
+        console.log("aaa");
+    });
 
 });
 
+function add_type(type_name){
+    $.post("controller/add_type.php",{
+        type_name: type_name,
+    },function(){
+        console.log(type_name)
+        $('#description').load("./controller/list_type.php");
+    });
+}

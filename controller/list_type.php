@@ -9,7 +9,7 @@
         <!-- <td>ID</td> -->
         <td>id</td>
         <td>type_name</td>
-        <td>description</td>
+        <!-- <td>description</td> -->
     </tr>
     <?php
     foreach ($result_list_all as $key => $value_list_all) {
@@ -17,7 +17,7 @@
             // echo "<td>" . $value_list_all["id"]. "</td>";
             echo "<td>" . $value_list_all["id"]. "</td>";
             echo "<td>" . $value_list_all["type_name"]. "</td>";
-            echo "<td>" . $value_list_all["description"]. "</td>";
+            //echo "<td>" . $value_list_all["description"]. "</td>";
         echo "<tr>";
     }
     ?>
