@@ -21,7 +21,6 @@ $(document).ready(function(){
     $('#btn_add_type').click(function(){
         $('#description').load("./controller/list_type.php");
         type_name = $('input[name="type_name"]').val();
-        console.log("aaa");
     });
 
 });
@@ -32,5 +31,14 @@ function add_type(type_name){
     },function(){
         console.log(type_name)
         $('#description').load("./controller/list_type.php");
+    });
+}
+
+function delete_type(type_id){
+    $.post("/controller/delete_type.php",{
+        type_id: type_id,
+    },function(){
+        console.log(type_id)
+        //$('#description').load("./controller/list_type.php");
     });
 }
