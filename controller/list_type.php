@@ -8,10 +8,12 @@
 ?>
 
 <script>
+
     $(document).on('click', '#delete_type', function() {
         type_id = $(this).val();
         delete_type(type_id);
     })
+
 </script>
 
 <h1>TYPE LIST</h1>

@@ -7,6 +7,7 @@ $(document).ready(function(){
         console.log('add_type');
         $('#even').html("");
         $('#even').load("./controller/form_type.php");
+        $('#description').html("");
         $('#description').load("./controller/list_type.php");
     });
 
@@ -19,6 +20,7 @@ $(document).ready(function(){
     });
 
     $('#btn_add_type').click(function(){
+        $('#description').html("");
         $('#description').load("./controller/list_type.php");
         type_name = $('input[name="type_name"]').val();
     });
@@ -30,15 +32,18 @@ function add_type(type_name){
         type_name: type_name,
     },function(){
         console.log(type_name)
+        $('#description').html("");
         $('#description').load("./controller/list_type.php");
     });
 }
 
 function delete_type(type_id){
-    $.post("/controller/delete_type.php",{
+    $.post("controller/delete_type.php",{
         type_id: type_id,
     },function(){
-        console.log(type_id)
-        //$('#description').load("./controller/list_type.php");
+        //console.log(type_id);
+        $('#description').load("./controller/list_type.php");
+
     });
+    
 }

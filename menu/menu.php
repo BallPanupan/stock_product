@@ -1,2 +1,2 @@
-<a href="javascript:void(0)" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="true" id='add_type'>add type</a>
+<a href="javascript:void(0)" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="true" id='add_type' onclick="myFunction()">add type</a>
 <a href="javascript:void(0)" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="true" id='add_product'>add product</a>
